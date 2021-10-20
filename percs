@@ -205,19 +205,21 @@ EclipseButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script"),true))()
 end)
 
-VynixuButton.Name = "VynixuButton"
+VynixuButton.Name = "XennyWareButton"
 VynixuButton.Parent = MM2Frame
 VynixuButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 VynixuButton.Position = UDim2.new(0, 54, 0, 37)
 VynixuButton.Size = UDim2.new(0, 200, 0, 50)
 VynixuButton.Font = Enum.Font.SourceSans
-VynixuButton.Text = "Vynixu"
+VynixuButton.Text = "XennyWare"
 VynixuButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 VynixuButton.TextScaled = true
 VynixuButton.TextSize = 14.000
 VynixuButton.TextWrapped = true
 VynixuButton.MouseButton1Down:connect(function()
-	loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+	repeat wait() until game.Players.LocalPlayer.Character
+	url = "https://raw.githubusercontent.com/xennyy/Xenny-Ware/main/loader.lua"
+	loadstring(game:HttpGet(url))()
 end)
 
 -- Scripts:
