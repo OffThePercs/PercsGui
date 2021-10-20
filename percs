@@ -1,0 +1,139 @@
+-- Made By Persc
+
+local ScriptHub = Instance.new("ScreenGui")
+local LoginFrame = Instance.new("Frame")
+local Logintitle = Instance.new("TextLabel")
+local username = Instance.new("TextBox")
+local password = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local percstitle = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local DaHood = Instance.new("TextButton")
+local MM2 = Instance.new("TextButton")
+
+
+
+ScriptHub.Name = "ScriptHub"
+ScriptHub.Parent = game.CoreGui
+
+LoginFrame.Name = "LoginFrame"
+LoginFrame.Parent = ScriptHub
+LoginFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+LoginFrame.BorderSizePixel = 0
+LoginFrame.Position = UDim2.new(0.259374619, 0, 0.229227319, 0)
+LoginFrame.Size = UDim2.new(0, 317, 0, 349)
+LoginFrame.Active = true
+LoginFrame.Draggable = true
+
+Logintitle.Name = "Login title"
+Logintitle.Parent = LoginFrame
+Logintitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logintitle.BackgroundTransparency = 1.000
+Logintitle.Size = UDim2.new(0, 317, 0, 50)
+Logintitle.Font = Enum.Font.SourceSans
+Logintitle.Text = "Login"
+Logintitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Logintitle.TextScaled = true
+Logintitle.TextSize = 14.000
+Logintitle.TextWrapped = true
+
+username.Name = "username"
+username.Parent = LoginFrame
+username.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+username.Position = UDim2.new(0.164037853, 0, 0.303724915, 0)
+username.Size = UDim2.new(0, 227, 0, 50)
+username.Font = Enum.Font.SourceSans
+username.Text = "Username"
+username.TextColor3 = Color3.fromRGB(255, 255, 255)
+username.TextScaled = true
+username.TextSize = 14.000
+username.TextWrapped = true
+
+password.Name = "password"
+password.Parent = LoginFrame
+password.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+password.Position = UDim2.new(0.164037853, 0, 0.55587393, 0)
+password.Size = UDim2.new(0, 227, 0, 50)
+password.Font = Enum.Font.SourceSans
+password.Text = "Password"
+password.TextColor3 = Color3.fromRGB(255, 255, 255)
+password.TextScaled = true
+password.TextSize = 14.000
+password.TextWrapped = true
+
+TextButton.Parent = LoginFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton.Position = UDim2.new(0, 65, 0, 287)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Login"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+	if username.Text == "Percs" and password.Text == "Gui" then
+		LoginFrame.Visible = false
+		MainFrame.Visible = true
+	end
+end)
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScriptHub
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.169917166, 0, 0.399328142, 0)
+MainFrame.Size = UDim2.new(0, 308, 0, 354)
+MainFrame.Visible = false
+MainFrame.Active = true
+MainFrame.Draggable = true
+
+UICorner.Parent = MainFrame
+
+percstitle.Name = "percs title"
+percstitle.Parent = MainFrame
+percstitle.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+percstitle.BackgroundTransparency = 1.000
+percstitle.BorderSizePixel = 0
+percstitle.Size = UDim2.new(0, 308, 0, 50)
+percstitle.Font = Enum.Font.SourceSans
+percstitle.Text = "Percs"
+percstitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+percstitle.TextScaled = true
+percstitle.TextSize = 14.000
+percstitle.TextWrapped = true
+
+UICorner_2.Parent = percstitle
+
+DaHood.Name = "DaHood"
+DaHood.Parent = MainFrame
+DaHood.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+DaHood.Position = UDim2.new(0, 54, 0, 273)
+DaHood.Size = UDim2.new(0, 200, 0, 50)
+DaHood.Font = Enum.Font.SciFi
+DaHood.Text = "DaHood"
+DaHood.TextColor3 = Color3.fromRGB(0, 0, 0)
+DaHood.TextScaled = true
+DaHood.TextSize = 14.000
+DaHood.TextWrapped = true
+DaHood.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/compwnter/destiny/main/loader'))();
+end)
+
+MM2.Name = "MM2"
+MM2.Parent = MainFrame
+MM2.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+MM2.Position = UDim2.new(0, 54, 0, 124)
+MM2.Size = UDim2.new(0, 200, 0, 50)
+MM2.Font = Enum.Font.SciFi
+MM2.Text = "MM2"
+MM2.TextColor3 = Color3.fromRGB(0, 0, 0)
+MM2.TextScaled = true
+MM2.TextSize = 14.000
+MM2.TextWrapped = true
+MM2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script"),true))()
+end)
