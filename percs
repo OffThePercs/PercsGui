@@ -1,4 +1,4 @@
--- Made By Persc
+-- Made By Percs
 
 local ScriptHub = Instance.new("ScreenGui")
 local LoginFrame = Instance.new("Frame")
@@ -12,6 +12,14 @@ local percstitle = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
 local DaHood = Instance.new("TextButton")
 local MM2 = Instance.new("TextButton")
+local DaHoodFrame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local LegacyButton = Instance.new("TextButton")
+local RayXButton = Instance.new("TextButton")
+local MM2Frame = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local EclipseButton = Instance.new("TextButton")
+local VynixuButton = Instance.new("TextButton")
 
 
 
@@ -22,7 +30,7 @@ LoginFrame.Name = "LoginFrame"
 LoginFrame.Parent = ScriptHub
 LoginFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 LoginFrame.BorderSizePixel = 0
-LoginFrame.Position = UDim2.new(0.259374619, 0, 0.229227319, 0)
+LoginFrame.Position = UDim2.new(0.215135932, 0, 0.285964906, 0)
 LoginFrame.Size = UDim2.new(0, 317, 0, 349)
 LoginFrame.Active = true
 LoginFrame.Draggable = true
@@ -85,7 +93,7 @@ MainFrame.Parent = ScriptHub
 MainFrame.Active = true
 MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.169917166, 0, 0.399328142, 0)
+MainFrame.Position = UDim2.new(0.279999465, 0, 0.349682748, 0)
 MainFrame.Size = UDim2.new(0, 308, 0, 354)
 MainFrame.Visible = false
 MainFrame.Active = true
@@ -111,7 +119,7 @@ UICorner_2.Parent = percstitle
 DaHood.Name = "DaHood"
 DaHood.Parent = MainFrame
 DaHood.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-DaHood.Position = UDim2.new(0, 54, 0, 273)
+DaHood.Position = UDim2.new(0, 54, 0, 124)
 DaHood.Size = UDim2.new(0, 200, 0, 50)
 DaHood.Font = Enum.Font.SciFi
 DaHood.Text = "DaHood"
@@ -119,14 +127,11 @@ DaHood.TextColor3 = Color3.fromRGB(0, 0, 0)
 DaHood.TextScaled = true
 DaHood.TextSize = 14.000
 DaHood.TextWrapped = true
-DaHood.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/compwnter/destiny/main/loader'))();
-end)
 
 MM2.Name = "MM2"
 MM2.Parent = MainFrame
 MM2.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-MM2.Position = UDim2.new(0, 54, 0, 124)
+MM2.Position = UDim2.new(0, 54, 0, 56)
 MM2.Size = UDim2.new(0, 200, 0, 50)
 MM2.Font = Enum.Font.SciFi
 MM2.Text = "MM2"
@@ -134,6 +139,106 @@ MM2.TextColor3 = Color3.fromRGB(0, 0, 0)
 MM2.TextScaled = true
 MM2.TextSize = 14.000
 MM2.TextWrapped = true
-MM2.MouseButton1Down:connect(function()
+
+DaHoodFrame.Name = "DaHoodFrame"
+DaHoodFrame.Parent = MainFrame
+DaHoodFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DaHoodFrame.BackgroundTransparency = 1.000
+DaHoodFrame.Position = UDim2.new(0, 0, 0, 187)
+DaHoodFrame.Size = UDim2.new(0, 308, 0, 167)
+
+UICorner_3.Parent = DaHoodFrame
+
+LegacyButton.Name = "LegacyButton"
+LegacyButton.Parent = DaHoodFrame
+LegacyButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+LegacyButton.Position = UDim2.new(0, 54, 0, 37)
+LegacyButton.Size = UDim2.new(0, 200, 0, 50)
+LegacyButton.Font = Enum.Font.SourceSans
+LegacyButton.Text = "Legacy"
+LegacyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+LegacyButton.TextScaled = true
+LegacyButton.TextSize = 14.000
+LegacyButton.TextWrapped = true
+LegacyButton.MouseButton1Down:connect(function()
+	-- / / V to open and close
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/compwnter/destiny/main/loader'))();
+end)
+
+RayXButton.Name = "RayXButton"
+RayXButton.Parent = DaHoodFrame
+RayXButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+RayXButton.Position = UDim2.new(0, 54, 0, 106)
+RayXButton.Size = UDim2.new(0, 200, 0, 50)
+RayXButton.Font = Enum.Font.SourceSans
+RayXButton.Text = "RayX"
+RayXButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+RayXButton.TextScaled = true
+RayXButton.TextSize = 14.000
+RayXButton.TextWrapped = true
+RayXButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/urmomugly/lua-project/main/Script%26/RAYXV001'))()
+end)
+
+MM2Frame.Name = "MM2Frame"
+MM2Frame.Parent = MainFrame
+MM2Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MM2Frame.BackgroundTransparency = 1.000
+MM2Frame.Position = UDim2.new(0, 0, 0, 187)
+MM2Frame.Size = UDim2.new(0, 308, 0, 167)
+MM2Frame.Visible = false
+
+UICorner_4.Parent = MM2Frame
+
+EclipseButton.Name = "EclipseButton"
+EclipseButton.Parent = MM2Frame
+EclipseButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+EclipseButton.Position = UDim2.new(0, 54, 0, 106)
+EclipseButton.Size = UDim2.new(0, 200, 0, 50)
+EclipseButton.Font = Enum.Font.SourceSans
+EclipseButton.Text = "Eclipse"
+EclipseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+EclipseButton.TextScaled = true
+EclipseButton.TextSize = 14.000
+EclipseButton.TextWrapped = true
+EclipseButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script"),true))()
 end)
+
+VynixuButton.Name = "VynixuButton"
+VynixuButton.Parent = MM2Frame
+VynixuButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+VynixuButton.Position = UDim2.new(0, 54, 0, 37)
+VynixuButton.Size = UDim2.new(0, 200, 0, 50)
+VynixuButton.Font = Enum.Font.SourceSans
+VynixuButton.Text = "Vynixu"
+VynixuButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+VynixuButton.TextScaled = true
+VynixuButton.TextSize = 14.000
+VynixuButton.TextWrapped = true
+VynixuButton.MouseButton1Down:connect(function()
+	loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+end)
+
+-- Scripts:
+
+local function MKUP_fake_script() -- DaHood.LocalScript 
+	local script = Instance.new('LocalScript', DaHood)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.DaHoodFrame.Visible = true
+		script.Parent.Parent.MM2Frame.Visible = false	
+		wait(0.1)
+	end)
+end
+coroutine.wrap(MKUP_fake_script)()
+local function SYQSYYK_fake_script() -- MM2.LocalScript 
+	local script = Instance.new('LocalScript', MM2)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.DaHoodFrame.Visible = false
+		script.Parent.Parent.MM2Frame.Visible = true	
+		wait(0.1)
+	end)
+end
+coroutine.wrap(SYQSYYK_fake_script)()
