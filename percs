@@ -1,4 +1,4 @@
-
+-- Made By Percs
 
 local ScriptHub = Instance.new("ScreenGui")
 local LoginFrame = Instance.new("Frame")
@@ -18,15 +18,9 @@ local MM2Frame = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
 local EclipseButton = Instance.new("TextButton")
 local ZypherButton = Instance.new("TextButton")
-local TopFrame = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
-local percstitle = Instance.new("TextLabel")
-local UICorner_5 = Instance.new("UICorner")
-local versiontitle = Instance.new("TextLabel")
-local UICorner_6 = Instance.new("UICorner")
 local Main = Instance.new("TextButton")
 local HomeFrame = Instance.new("Frame")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 local DiscordLabel = Instance.new("TextLabel")
 local WelcomeLabel = Instance.new("TextLabel")
 
@@ -40,17 +34,16 @@ LoginFrame.Parent = ScriptHub
 LoginFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 LoginFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
 LoginFrame.BorderSizePixel = 5
-LoginFrame.Position = UDim2.new(0.089621529, 0, 0.237501547, 0)
+LoginFrame.Position = UDim2.new(0.0721114427, 0, 0.407899022, 0)
 LoginFrame.Size = UDim2.new(0, 317, 0, 349)
 LoginFrame.Active = true
 LoginFrame.Draggable = true
 
 Logintitle.Name = "Login title"
 Logintitle.Parent = LoginFrame
-Logintitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Logintitle.BackgroundTransparency = 1.000
-Logintitle.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Logintitle.BorderSizePixel = 0
+Logintitle.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Logintitle.BorderColor3 = Color3.fromRGB(109, 109, 109)
+Logintitle.BorderSizePixel = 5
 Logintitle.Size = UDim2.new(0, 317, 0, 50)
 Logintitle.Font = Enum.Font.SourceSans
 Logintitle.Text = "Login"
@@ -105,9 +98,8 @@ MainFrame.Parent = ScriptHub
 MainFrame.Active = true
 MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.51677829, 0, 0.265646428, 0)
+MainFrame.Position = UDim2.new(0.54713738, 0, 0.278492361, 0)
 MainFrame.Size = UDim2.new(0, 410, 0, 354)
-MainFrame.Visible = false
 MainFrame.Active = true
 MainFrame.Draggable = true
 
@@ -223,47 +215,6 @@ ZypherButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Holdigen/HoldHub/main/mm2", true))()
 end)
 
-TopFrame.Name = "TopFrame"
-TopFrame.Parent = MainFrame
-TopFrame.Active = true
-TopFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-TopFrame.Position = UDim2.new(0, 0, -0.11299435, 0)
-TopFrame.Size = UDim2.new(0, 410, 0, 40)
-
-UICorner_4.Parent = TopFrame
-
-percstitle.Name = "percs title"
-percstitle.Parent = TopFrame
-percstitle.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-percstitle.BackgroundTransparency = 1.000
-percstitle.BorderSizePixel = 0
-percstitle.Position = UDim2.new(0.0585365854, 0, 0, 0)
-percstitle.Size = UDim2.new(0, 151, 0, 40)
-percstitle.Font = Enum.Font.SourceSans
-percstitle.Text = "Percs"
-percstitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-percstitle.TextScaled = true
-percstitle.TextSize = 14.000
-percstitle.TextWrapped = true
-
-UICorner_5.Parent = percstitle
-
-versiontitle.Name = "version title"
-versiontitle.Parent = TopFrame
-versiontitle.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-versiontitle.BackgroundTransparency = 1.000
-versiontitle.BorderSizePixel = 0
-versiontitle.Position = UDim2.new(0.586139381, 0, 0, 0)
-versiontitle.Size = UDim2.new(0, 151, 0, 40)
-versiontitle.Font = Enum.Font.SourceSans
-versiontitle.Text = "v1.0.0a"
-versiontitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-versiontitle.TextScaled = true
-versiontitle.TextSize = 14.000
-versiontitle.TextWrapped = true
-
-UICorner_6.Parent = versiontitle
-
 Main.Name = "Main"
 Main.Parent = MainFrame
 Main.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
@@ -284,14 +235,14 @@ HomeFrame.BackgroundTransparency = 1.000
 HomeFrame.Position = UDim2.new(0, 0, 0, 81)
 HomeFrame.Size = UDim2.new(0, 410, 0, 272)
 
-UICorner_7.Parent = HomeFrame
+UICorner_4.Parent = HomeFrame
 
 DiscordLabel.Name = "DiscordLabel"
 DiscordLabel.Parent = HomeFrame
 DiscordLabel.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 DiscordLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
 DiscordLabel.BorderSizePixel = 5
-DiscordLabel.Position = UDim2.new(0.151219547, 0, 0.709558845, 0)
+DiscordLabel.Position = UDim2.new(0.151219547, 0, 0.746323526, 0)
 DiscordLabel.Size = UDim2.new(0, 286, 0, 50)
 DiscordLabel.Font = Enum.Font.SourceSans
 DiscordLabel.Text = "https://discord.gg/48gPAvHXhH"
@@ -303,7 +254,7 @@ WelcomeLabel.Parent = HomeFrame
 WelcomeLabel.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 WelcomeLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
 WelcomeLabel.BorderSizePixel = 5
-WelcomeLabel.Position = UDim2.new(0.158536613, 0, 0.183823526, 0)
+WelcomeLabel.Position = UDim2.new(0.158536613, 0, 0.367647052, 0)
 WelcomeLabel.Size = UDim2.new(0, 286, 0, 50)
 WelcomeLabel.Font = Enum.Font.SourceSans
 WelcomeLabel.Text = "Welcome, To Percs Script Hub"
@@ -312,7 +263,7 @@ WelcomeLabel.TextSize = 25.000
 
 -- Scripts:
 
-local function IWYQJOL_fake_script() -- DaHood.LocalScript 
+local function SPEUQVG_fake_script() -- DaHood.LocalScript 
 	local script = Instance.new('LocalScript', DaHood)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -322,8 +273,8 @@ local function IWYQJOL_fake_script() -- DaHood.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(IWYQJOL_fake_script)()
-local function MINW_fake_script() -- MM2.LocalScript 
+coroutine.wrap(SPEUQVG_fake_script)()
+local function MAYH_fake_script() -- MM2.LocalScript 
 	local script = Instance.new('LocalScript', MM2)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -333,8 +284,8 @@ local function MINW_fake_script() -- MM2.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(MINW_fake_script)()
-local function VZWWWB_fake_script() -- Main.LocalScript 
+coroutine.wrap(MAYH_fake_script)()
+local function PRXUCDQ_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -344,4 +295,4 @@ local function VZWWWB_fake_script() -- Main.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(VZWWWB_fake_script)()
+coroutine.wrap(PRXUCDQ_fake_script)()
