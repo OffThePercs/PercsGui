@@ -101,7 +101,7 @@ MainFrame.Parent = ScriptHub
 MainFrame.Active = true
 MainFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.459555656, 0, 0.280856401, 0)
+MainFrame.Position = UDim2.new(0.505820513, 0, 0.290078014, 0)
 MainFrame.Size = UDim2.new(0, 410, 0, 354)
 MainFrame.Visible = false
 MainFrame.Active = true
@@ -221,7 +221,7 @@ HoldHubButton.TextScaled = true
 HoldHubButton.TextSize = 14.000
 HoldHubButton.TextWrapped = true
 HoldHubButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Holdigen/HoldHub/main/mm2", true))()
+	loadstrhing(game:HttpGet("https://raw.githubusercontent.com/Holdigen/HoldHub/main/mm2", true))()
 end)
 
 Main.Name = "Main"
@@ -272,7 +272,7 @@ WelcomeLabel.TextSize = 25.000
 
 -- Scripts:
 
-local function DJKKQ_fake_script() -- DaHood.LocalScript 
+local function OVRDE_fake_script() -- DaHood.LocalScript 
 	local script = Instance.new('LocalScript', DaHood)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -282,8 +282,8 @@ local function DJKKQ_fake_script() -- DaHood.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(DJKKQ_fake_script)()
-local function TYCV_fake_script() -- MM2.LocalScript 
+coroutine.wrap(OVRDE_fake_script)()
+local function HEABAQI_fake_script() -- MM2.LocalScript 
 	local script = Instance.new('LocalScript', MM2)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -293,8 +293,8 @@ local function TYCV_fake_script() -- MM2.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(TYCV_fake_script)()
-local function IGWZJ_fake_script() -- Main.LocalScript 
+coroutine.wrap(HEABAQI_fake_script)()
+local function CIBCY_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -304,4 +304,29 @@ local function IGWZJ_fake_script() -- Main.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(IGWZJ_fake_script)()
+coroutine.wrap(CIBCY_fake_script)()
+local function YOIGJVA_fake_script() -- MainFrame.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local FrameObject = script.Parent.FrameObject
+	local Open = false
+	
+	local PostionClosed = UDim2.new (0.46, 01, 0)
+	local PositionOpen = UDim2.new(0.46, 0,0.281, 0)
+	
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:connect(function(keyCode)
+		if keyCode.keyCode == Enum.KeyCode.h then
+			if Open then
+				FrameObject:TweenPosition(PostionClosed)
+				Open = false
+			else
+				Open = true
+				FrameObject:TweenPosition(PositionOpen)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(YOIGJVA_fake_script)()
