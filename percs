@@ -161,8 +161,8 @@ LegacyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 LegacyButton.TextScaled = true
 LegacyButton.TextSize = 14.000
 LegacyButton.TextWrapped = true
-NAMEOFBUTTONHERE.MouseButton1Down:connect(function()
-	Scripthere
+LegacyButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CrystalManMan/crystacentral/main/wonder"))()
 end)
 
 RayXButton.Name = "RayXButton"
@@ -176,8 +176,8 @@ RayXButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 RayXButton.TextScaled = true
 RayXButton.TextSize = 14.000
 RayXButton.TextWrapped = true
-NAMEOFBUTTONHERE.MouseButton1Down:connect(function()
-	Scripthere
+RayXButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/urmomugly/lua-project/main/Script%26/RAYXV001'))()
 end)
 
 MM2Frame.Name = "MM2Frame"
