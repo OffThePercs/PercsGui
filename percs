@@ -314,22 +314,4 @@ coroutine.wrap(KMHVL_fake_script)()
 local function YVFE_fake_script() -- MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
-	local Plr = game.Players.LocalPlayer
-	
-	Plr:GetMouse().KeyDown:Connect(function(K)
-		if K == "h" then
-			script.Parent.Visible = true
-		end
-	end)
-	
-	local Plr = game.Players.LocalPlayer
-	
-	Plr:GetMouse().KeyDown:Connect(function(K)
-		if K == "h" then
-			script.Parent.Visible = false
-		end
-	end)
-	
-	
-end
 coroutine.wrap(YVFE_fake_script)()
