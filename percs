@@ -1,4 +1,4 @@
--- Made By Percs
+-- Welcome, Made By Percs
 
 local ScriptHub = Instance.new("ScreenGui")
 local LoginFrame = Instance.new("Frame")
@@ -17,13 +17,18 @@ local RayXButton = Instance.new("TextButton")
 local MM2Frame = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
 local EclipseButton = Instance.new("TextButton")
-local XennyWareButton = Instance.new("TextButton")
-local Frame = Instance.new("Frame")
+local YerPeq = Instance.new("TextButton")
+local TopFrame = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
 local percstitle = Instance.new("TextLabel")
 local UICorner_5 = Instance.new("UICorner")
 local versiontitle = Instance.new("TextLabel")
 local UICorner_6 = Instance.new("UICorner")
+local Main = Instance.new("TextButton")
+local HomeFrame = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local DiscordLabel = Instance.new("TextLabel")
+local WelcomeLabel = Instance.new("TextLabel")
 
 
 
@@ -38,7 +43,7 @@ LoginFrame.BorderSizePixel = 5
 LoginFrame.Position = UDim2.new(0.089621529, 0, 0.237501547, 0)
 LoginFrame.Size = UDim2.new(0, 317, 0, 349)
 LoginFrame.Active = true
-LoginFrame.Draggable - true
+LoginFrame.Draggable = true
 
 Logintitle.Name = "Login title"
 Logintitle.Parent = LoginFrame
@@ -88,19 +93,21 @@ TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
-if username.Text == "Percs" and password.Text == "Gui" then
-	LoginFrame.Visible = false
-	MainFrame.Visible = true
-end
+TextButton.MouseButton1Down:connect(function()
+	if username.Text == "Percs" and password.Text == "Gui" then
+		LoginFrame.Visible = false
+		MainFrame.Visible = true
+	end
 end)
+
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = ScriptHub
 MainFrame.Active = true
 MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.573209345, 0, 0.255120099, 0)
-MainFrame.Size = UDim2.new(0, 308, 0, 354)
+MainFrame.Position = UDim2.new(0.51677829, 0, 0.265646428, 0)
+MainFrame.Size = UDim2.new(0, 410, 0, 354)
 MainFrame.Visible = false
 MainFrame.Active = true
 MainFrame.Draggable = true
@@ -110,41 +117,45 @@ UICorner.Parent = MainFrame
 DaHood.Name = "DaHood"
 DaHood.Parent = MainFrame
 DaHood.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-DaHood.Position = UDim2.new(0, 54, 0, 124)
-DaHood.Size = UDim2.new(0, 200, 0, 50)
+DaHood.BorderColor3 = Color3.fromRGB(255, 255, 255)
+DaHood.BorderSizePixel = 5
+DaHood.Position = UDim2.new(0, 277, 0, 9)
+DaHood.Size = UDim2.new(0, 115, 0, 50)
 DaHood.Font = Enum.Font.SciFi
 DaHood.Text = "DaHood"
 DaHood.TextColor3 = Color3.fromRGB(0, 0, 0)
-DaHood.TextScaled = true
-DaHood.TextSize = 14.000
+DaHood.TextSize = 35.000
 DaHood.TextWrapped = true
 
 MM2.Name = "MM2"
 MM2.Parent = MainFrame
 MM2.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-MM2.Position = UDim2.new(0, 54, 0, 56)
-MM2.Size = UDim2.new(0, 200, 0, 50)
+MM2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+MM2.BorderSizePixel = 5
+MM2.Position = UDim2.new(0, 151, 0, 9)
+MM2.Size = UDim2.new(0, 115, 0, 50)
 MM2.Font = Enum.Font.SciFi
 MM2.Text = "MM2"
 MM2.TextColor3 = Color3.fromRGB(0, 0, 0)
-MM2.TextScaled = true
-MM2.TextSize = 14.000
+MM2.TextSize = 35.000
 MM2.TextWrapped = true
 
 DaHoodFrame.Name = "DaHoodFrame"
 DaHoodFrame.Parent = MainFrame
-DaHoodFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DaHoodFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 DaHoodFrame.BackgroundTransparency = 1.000
-DaHoodFrame.Position = UDim2.new(0, 0, 0, 187)
-DaHoodFrame.Size = UDim2.new(0, 308, 0, 167)
+DaHoodFrame.Position = UDim2.new(0, 0, 0, 81)
+DaHoodFrame.Size = UDim2.new(0, 410, 0, 272)
+DaHoodFrame.Visible = false
 
 UICorner_2.Parent = DaHoodFrame
 
 LegacyButton.Name = "LegacyButton"
 LegacyButton.Parent = DaHoodFrame
 LegacyButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-LegacyButton.Position = UDim2.new(0, 54, 0, 37)
+LegacyButton.Position = UDim2.new(0, 114, 0, 88)
 LegacyButton.Size = UDim2.new(0, 200, 0, 50)
+LegacyButton.Visible = false
 LegacyButton.Font = Enum.Font.SourceSans
 LegacyButton.Text = "Legacy"
 LegacyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -155,11 +166,13 @@ LegacyButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CrystalManMan/crystacentral/main/wonder"))()
 end)
 
+
 RayXButton.Name = "RayXButton"
 RayXButton.Parent = DaHoodFrame
 RayXButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-RayXButton.Position = UDim2.new(0, 54, 0, 106)
+RayXButton.Position = UDim2.new(0, 114, 0, 157)
 RayXButton.Size = UDim2.new(0, 200, 0, 50)
+RayXButton.Visible = false
 RayXButton.Font = Enum.Font.SourceSans
 RayXButton.Text = "RayX"
 RayXButton.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -172,10 +185,10 @@ end)
 
 MM2Frame.Name = "MM2Frame"
 MM2Frame.Parent = MainFrame
-MM2Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MM2Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 MM2Frame.BackgroundTransparency = 1.000
-MM2Frame.Position = UDim2.new(0, 0, 0, 187)
-MM2Frame.Size = UDim2.new(0, 308, 0, 167)
+MM2Frame.Position = UDim2.new(0, 0, 0, 81)
+MM2Frame.Size = UDim2.new(0, 410, 0, 272)
 MM2Frame.Visible = false
 
 UICorner_3.Parent = MM2Frame
@@ -183,7 +196,9 @@ UICorner_3.Parent = MM2Frame
 EclipseButton.Name = "EclipseButton"
 EclipseButton.Parent = MM2Frame
 EclipseButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-EclipseButton.Position = UDim2.new(0, 54, 0, 106)
+EclipseButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+EclipseButton.BorderSizePixel = 3
+EclipseButton.Position = UDim2.new(0, 110, 0, 157)
 EclipseButton.Size = UDim2.new(0, 200, 0, 50)
 EclipseButton.Font = Enum.Font.SourceSans
 EclipseButton.Text = "Eclipse"
@@ -195,35 +210,41 @@ EclipseButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script"),true))()
 end)
 
-XennyWareButton.Name = "XennyWareButton"
-XennyWareButton.Parent = MM2Frame
-XennyWareButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-XennyWareButton.Position = UDim2.new(0, 54, 0, 37)
-XennyWareButton.Size = UDim2.new(0, 200, 0, 50)
-XennyWareButton.Font = Enum.Font.SourceSans
-XennyWareButton.Text = "XennyWare"
-XennyWareButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-XennyWareButton.TextScaled = true
-XennyWareButton.TextSize = 14.000
-XennyWareButton.TextWrapped = true
-XennyWareButton.MouseButton1Down:connect(function()
-	repeat wait() until game.Players.LocalPlayer.Character
-	url = "https://raw.githubusercontent.com/xennyy/Xenny-Ware/main/loader.lua"
-	loadstring(game:HttpGet(url))()
+YerPeq.Name = "YerPeq"
+YerPeq.Parent = MM2Frame
+YerPeq.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+YerPeq.BorderColor3 = Color3.fromRGB(255, 255, 255)
+YerPeq.BorderSizePixel = 3
+YerPeq.Position = UDim2.new(0, 110, 0, 88)
+YerPeq.Size = UDim2.new(0, 200, 0, 50)
+YerPeq.Font = Enum.Font.SourceSans
+YerPeq.Text = "YerPeq"
+YerPeq.TextColor3 = Color3.fromRGB(255, 255, 255)
+YerPeq.TextScaled = true
+YerPeq.TextSize = 14.000
+YerPeq.TextWrapped = true
+YerPeq.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/derekcool38/Releases/main/ScriptHub/Loader.lua"))()
 end)
 
-Frame.Parent = MainFrame
-Frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-Frame.Position = UDim2.new(0, 0, -0.132768363, 0)
-Frame.Size = UDim2.new(0, 309, 0, 40)
+TopFrame.Name = "TopFrame"
+TopFrame.Parent = MainFrame
+TopFrame.Active = true
+TopFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TopFrame.Position = UDim2.new(0, 0, -0.132768363, 0)
+TopFrame.Size = UDim2.new(0, 410, 0, 40)
+TopFrame.Visible = false
+TopFrame.Active = true
+TopFrame.Draggable = true
 
-UICorner_4.Parent = Frame
+UICorner_4.Parent = TopFrame
 
 percstitle.Name = "percs title"
-percstitle.Parent = Frame
+percstitle.Parent = TopFrame
 percstitle.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 percstitle.BackgroundTransparency = 1.000
 percstitle.BorderSizePixel = 0
+percstitle.Position = UDim2.new(0.0585365854, 0, 0, 0)
 percstitle.Size = UDim2.new(0, 151, 0, 40)
 percstitle.Font = Enum.Font.SourceSans
 percstitle.Text = "Percs"
@@ -235,11 +256,11 @@ percstitle.TextWrapped = true
 UICorner_5.Parent = percstitle
 
 versiontitle.Name = "version title"
-versiontitle.Parent = Frame
+versiontitle.Parent = TopFrame
 versiontitle.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 versiontitle.BackgroundTransparency = 1.000
 versiontitle.BorderSizePixel = 0
-versiontitle.Position = UDim2.new(0.508090615, 0, 0, 0)
+versiontitle.Position = UDim2.new(0.586139381, 0, 0, 0)
 versiontitle.Size = UDim2.new(0, 151, 0, 40)
 versiontitle.Font = Enum.Font.SourceSans
 versiontitle.Text = "v1.0.0a"
@@ -250,25 +271,84 @@ versiontitle.TextWrapped = true
 
 UICorner_6.Parent = versiontitle
 
+Main.Name = "Main"
+Main.Parent = MainFrame
+Main.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderSizePixel = 5
+Main.Position = UDim2.new(0, 24, 0, 9)
+Main.Size = UDim2.new(0, 115, 0, 50)
+Main.Font = Enum.Font.SciFi
+Main.Text = "Home"
+Main.TextColor3 = Color3.fromRGB(0, 0, 0)
+Main.TextSize = 35.000
+Main.TextWrapped = true
+
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = MainFrame
+HomeFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+HomeFrame.BackgroundTransparency = 1.000
+HomeFrame.Position = UDim2.new(0, 0, 0, 81)
+HomeFrame.Size = UDim2.new(0, 410, 0, 272)
+
+UICorner_7.Parent = HomeFrame
+
+DiscordLabel.Name = "DiscordLabel"
+DiscordLabel.Parent = HomeFrame
+DiscordLabel.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+DiscordLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+DiscordLabel.BorderSizePixel = 5
+DiscordLabel.Position = UDim2.new(0.151219547, 0, 0.709558845, 0)
+DiscordLabel.Size = UDim2.new(0, 286, 0, 50)
+DiscordLabel.Font = Enum.Font.SourceSans
+DiscordLabel.Text = "https://discord.gg/48gPAvHXhH"
+DiscordLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+DiscordLabel.TextSize = 25.000
+
+WelcomeLabel.Name = "WelcomeLabel"
+WelcomeLabel.Parent = HomeFrame
+WelcomeLabel.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+WelcomeLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+WelcomeLabel.BorderSizePixel = 5
+WelcomeLabel.Position = UDim2.new(0.158536613, 0, 0.183823526, 0)
+WelcomeLabel.Size = UDim2.new(0, 286, 0, 50)
+WelcomeLabel.Font = Enum.Font.SourceSans
+WelcomeLabel.Text = "Welcome, To Percs Script Hub"
+WelcomeLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+WelcomeLabel.TextSize = 25.000
+
 -- Scripts:
 
-local function RBITY_fake_script() -- DaHood.LocalScript 
+local function QSBNKE_fake_script() -- DaHood.LocalScript 
 	local script = Instance.new('LocalScript', DaHood)
 
 	script.Parent.MouseButton1Click:connect(function()
 		script.Parent.Parent.DaHoodFrame.Visible = true
-		script.Parent.Parent.MM2Frame.Visible = false	
+		script.Parent.Parent.MM2Frame.Visible = false
+		script.Parent.Parent.HomeFrame.Visible = false
 		wait(0.1)
 	end)
 end
-coroutine.wrap(RBITY_fake_script)()
-local function RCTTQYB_fake_script() -- MM2.LocalScript 
+coroutine.wrap(QSBNKE_fake_script)()
+local function PEXUT_fake_script() -- MM2.LocalScript 
 	local script = Instance.new('LocalScript', MM2)
 
 	script.Parent.MouseButton1Click:connect(function()
 		script.Parent.Parent.DaHoodFrame.Visible = false
 		script.Parent.Parent.MM2Frame.Visible = true	
+		script.Parent.Parent.HomeFrame.Visible = false
 		wait(0.1)
 	end)
 end
-coroutine.wrap(RCTTQYB_fake_script)()
+coroutine.wrap(PEXUT_fake_script)()
+local function LHRTIIH_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.DaHoodFrame.Visible = false
+		script.Parent.Parent.MM2Frame.Visible = false
+		script.Parent.Parent.HomeFrame.Visible = true
+		wait(0.1)
+	end)
+end
+coroutine.wrap(LHRTIIH_fake_script)()
