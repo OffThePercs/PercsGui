@@ -311,9 +311,6 @@ infiniteyieldButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 infiniteyieldButton.TextScaled = true
 infiniteyieldButton.TextSize = 14.000
 infiniteyieldButton.TextWrapped = true
-infiniteyieldButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
 
 Comingsoontitle.Name = "Coming soon  title"
 Comingsoontitle.Parent = AdminFrame
@@ -331,7 +328,7 @@ Comingsoontitle.TextWrapped = true
 
 -- Scripts:
 
-local function VIPPF_fake_script() -- DaHood.LocalScript 
+local function DICHDPI_fake_script() -- DaHood.LocalScript 
 	local script = Instance.new('LocalScript', DaHood)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -342,8 +339,8 @@ local function VIPPF_fake_script() -- DaHood.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(VIPPF_fake_script)()
-local function UCQOVR_fake_script() -- MM2.LocalScript 
+coroutine.wrap(DICHDPI_fake_script)()
+local function ZIGRN_fake_script() -- MM2.LocalScript 
 	local script = Instance.new('LocalScript', MM2)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -354,8 +351,8 @@ local function UCQOVR_fake_script() -- MM2.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(UCQOVR_fake_script)()
-local function JQJCVZW_fake_script() -- Main.LocalScript 
+coroutine.wrap(ZIGRN_fake_script)()
+local function RAWIJ_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -366,8 +363,8 @@ local function JQJCVZW_fake_script() -- Main.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(JQJCVZW_fake_script)()
-local function RPWJXG_fake_script() -- MainFrame.LocalScript 
+coroutine.wrap(RAWIJ_fake_script)()
+local function LRUPZ_fake_script() -- MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local FrameObject = script.Parent.FrameObject
@@ -391,8 +388,8 @@ local function RPWJXG_fake_script() -- MainFrame.LocalScript
 	end)
 	
 end
-coroutine.wrap(RPWJXG_fake_script)()
-local function OLDZRKJ_fake_script() -- Admin.LocalScript 
+coroutine.wrap(LRUPZ_fake_script)()
+local function MEXHA_fake_script() -- Admin.LocalScript 
 	local script = Instance.new('LocalScript', Admin)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -403,4 +400,4 @@ local function OLDZRKJ_fake_script() -- Admin.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(OLDZRKJ_fake_script)()
+coroutine.wrap(MEXHA_fake_script)()
