@@ -104,6 +104,8 @@ MainFrame.BorderSizePixel = 0
 MainFrame.Position = UDim2.new(0.459555656, 0, 0.280856401, 0)
 MainFrame.Size = UDim2.new(0, 410, 0, 354)
 MainFrame.Visible = false
+MainFrame.Active = true
+MainFrame.Draggable = true
 
 UICorner.Parent = MainFrame
 
