@@ -17,7 +17,7 @@ local RayXButton = Instance.new("TextButton")
 local MM2Frame = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
 local EclipseButton = Instance.new("TextButton")
-local ZypherButton = Instance.new("TextButton")
+local HoldHubButton = Instance.new("TextButton")
 local Main = Instance.new("TextButton")
 local HomeFrame = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
@@ -100,6 +100,7 @@ MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 MainFrame.BorderSizePixel = 0
 MainFrame.Position = UDim2.new(0.54713738, 0, 0.278492361, 0)
 MainFrame.Size = UDim2.new(0, 410, 0, 354)
+MainFrame.Visible = false
 MainFrame.Active = true
 MainFrame.Draggable = true
 
@@ -198,20 +199,20 @@ EclipseButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script"),true))()
 end)
 
-ZypherButton.Name = "ZypherButton"
-ZypherButton.Parent = MM2Frame
-ZypherButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-ZypherButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-ZypherButton.BorderSizePixel = 3
-ZypherButton.Position = UDim2.new(0, 110, 0, 88)
-ZypherButton.Size = UDim2.new(0, 200, 0, 50)
-ZypherButton.Font = Enum.Font.SourceSans
-ZypherButton.Text = "Zypher"
-ZypherButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ZypherButton.TextScaled = true
-ZypherButton.TextSize = 14.000
-ZypherButton.TextWrapped = true
-ZypherButton.MouseButton1Down:connect(function()
+HoldHubButton.Name = "HoldHubButton"
+HoldHubButton.Parent = MM2Frame
+HoldHubButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+HoldHubButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+HoldHubButton.BorderSizePixel = 3
+HoldHubButton.Position = UDim2.new(0, 110, 0, 88)
+HoldHubButton.Size = UDim2.new(0, 200, 0, 50)
+HoldHubButton.Font = Enum.Font.SourceSans
+HoldHubButton.Text = "HoldHub"
+HoldHubButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+HoldHubButton.TextScaled = true
+HoldHubButton.TextSize = 14.000
+HoldHubButton.TextWrapped = true
+HoldHubButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Holdigen/HoldHub/main/mm2", true))()
 end)
 
@@ -263,7 +264,7 @@ WelcomeLabel.TextSize = 25.000
 
 -- Scripts:
 
-local function SPEUQVG_fake_script() -- DaHood.LocalScript 
+local function HWLNCVI_fake_script() -- DaHood.LocalScript 
 	local script = Instance.new('LocalScript', DaHood)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -273,8 +274,8 @@ local function SPEUQVG_fake_script() -- DaHood.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(SPEUQVG_fake_script)()
-local function MAYH_fake_script() -- MM2.LocalScript 
+coroutine.wrap(HWLNCVI_fake_script)()
+local function CNQDYMT_fake_script() -- MM2.LocalScript 
 	local script = Instance.new('LocalScript', MM2)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -284,8 +285,8 @@ local function MAYH_fake_script() -- MM2.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(MAYH_fake_script)()
-local function PRXUCDQ_fake_script() -- Main.LocalScript 
+coroutine.wrap(CNQDYMT_fake_script)()
+local function NYLVRIZ_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -295,4 +296,4 @@ local function PRXUCDQ_fake_script() -- Main.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(PRXUCDQ_fake_script)()
+coroutine.wrap(NYLVRIZ_fake_script)()
