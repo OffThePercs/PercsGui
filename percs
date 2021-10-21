@@ -226,7 +226,7 @@ HoldHubButton.TextScaled = true
 HoldHubButton.TextSize = 14.000
 HoldHubButton.TextWrapped = true
 HoldHubButton.MouseButton1Down:connect(function()
-	loadstrhing(game:HttpGet("https://raw.githubusercontent.com/Holdigen/HoldHub/main/mm2", true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Holdigen/HoldHub/main/mm2", true))()
 end)
 
 Main.Name = "Main"
@@ -311,6 +311,9 @@ infiniteyieldButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 infiniteyieldButton.TextScaled = true
 infiniteyieldButton.TextSize = 14.000
 infiniteyieldButton.TextWrapped = true
+infiniteyieldButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
 
 Comingsoontitle.Name = "Coming soon  title"
 Comingsoontitle.Parent = AdminFrame
@@ -369,12 +372,12 @@ local function LRUPZ_fake_script() -- MainFrame.LocalScript
 
 	local FrameObject = script.Parent.FrameObject
 	local Open = false
-	
+
 	local PostionClosed = UDim2.new (0.46, 01, 0)
 	local PositionOpen = UDim2.new(0.46, 0,0.281, 0)
-	
+
 	local UserInputService = game:GetService("UserInputService")
-	
+
 	UserInputService.InputBegan:connect(function(keyCode)
 		if keyCode.keyCode == Enum.KeyCode.h then
 			if Open then
@@ -386,7 +389,7 @@ local function LRUPZ_fake_script() -- MainFrame.LocalScript
 			end
 		end
 	end)
-	
+
 end
 coroutine.wrap(LRUPZ_fake_script)()
 local function MEXHA_fake_script() -- Admin.LocalScript 
@@ -401,3 +404,106 @@ local function MEXHA_fake_script() -- Admin.LocalScript
 	end)
 end
 coroutine.wrap(MEXHA_fake_script)()
+
+
+Admin.Name = "Admin"
+Admin.Parent = MainFrame
+Admin.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Admin.BorderColor3 = Color3.fromRGB(255, 0, 4)
+Admin.BorderSizePixel = 5
+Admin.Position = UDim2.new(0, 396, 0, 9)
+Admin.Size = UDim2.new(0, 115, 0, 50)
+Admin.Font = Enum.Font.SciFi
+Admin.Text = "Admin"
+Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin.TextSize = 35.000
+Admin.TextWrapped = true
+
+AdminFrame.Name = "AdminFrame"
+AdminFrame.Parent = MainFrame
+AdminFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AdminFrame.BackgroundTransparency = 1.000
+AdminFrame.Position = UDim2.new(0, 0, 0, 81)
+AdminFrame.Size = UDim2.new(0, 535, 0, 273)
+AdminFrame.Visible = false
+
+UICorner_5.Parent = AdminFrame
+
+infiniteyieldButton.Name = "infinite yieldButton"
+infiniteyieldButton.Parent = AdminFrame
+infiniteyieldButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+infiniteyieldButton.BorderColor3 = Color3.fromRGB(255, 0, 4)
+infiniteyieldButton.BorderSizePixel = 5
+infiniteyieldButton.Position = UDim2.new(0, 316, 0, 10)
+infiniteyieldButton.Size = UDim2.new(0, 195, 0, 52)
+infiniteyieldButton.Font = Enum.Font.SourceSans
+infiniteyieldButton.Text = "infinite yield"
+infiniteyieldButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+infiniteyieldButton.TextScaled = true
+infiniteyieldButton.TextSize = 14.000
+infiniteyieldButton.TextWrapped = true
+
+Comingsoontitle.Name = "Coming soon  title"
+Comingsoontitle.Parent = AdminFrame
+Comingsoontitle.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Comingsoontitle.BorderColor3 = Color3.fromRGB(255, 0, 4)
+Comingsoontitle.BorderSizePixel = 5
+Comingsoontitle.Position = UDim2.new(0.590654194, 0, 0.263736308, 0)
+Comingsoontitle.Size = UDim2.new(0, 195, 0, 50)
+Comingsoontitle.Font = Enum.Font.SciFi
+Comingsoontitle.Text = "Coming soon"
+Comingsoontitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Comingsoontitle.TextScaled = true
+Comingsoontitle.TextSize = 14.000
+Comingsoontitle.TextWrapped = true
+
+-- Scripts:
+
+local function QFHOWW_fake_script() -- DaHood.LocalScript 
+	local script = Instance.new('LocalScript', DaHood)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.DaHoodFrame.Visible = true
+		script.Parent.Parent.MM2Frame.Visible = false	
+		script.Parent.Parent.HomeFrame.Visible = false
+		script.Parent.Parent.AdminFrame.Visible = false
+		wait(0.1)
+	end)
+end
+coroutine.wrap(QFHOWW_fake_script)()
+local function GBGU_fake_script() -- MM2.LocalScript 
+	local script = Instance.new('LocalScript', MM2)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.DaHoodFrame.Visible = false
+		script.Parent.Parent.MM2Frame.Visible = true	
+		script.Parent.Parent.HomeFrame.Visible = false
+		script.Parent.Parent.AdminFrame.Visible = false
+		wait(0.1)
+	end)
+end
+coroutine.wrap(GBGU_fake_script)()
+local function QVFX_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.DaHoodFrame.Visible = false
+		script.Parent.Parent.MM2Frame.Visible = false	
+		script.Parent.Parent.HomeFrame.Visible = true
+		script.Parent.Parent.AdminFrame.Visible = false
+		wait(0.1)
+	end)
+end
+coroutine.wrap(QVFX_fake_script)()
+local function SWNGN_fake_script() -- Admin.LocalScript 
+	local script = Instance.new('LocalScript', Admin)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.DaHoodFrame.Visible = false
+		script.Parent.Parent.MM2Frame.Visible = false	
+		script.Parent.Parent.HomeFrame.Visible = false
+		script.Parent.Parent.AdminFrame.Visible = true
+		wait(0.1)
+	end)
+end
+coroutine.wrap(SWNGN_fake_script)()
