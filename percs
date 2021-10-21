@@ -195,19 +195,21 @@ EclipseButton.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script"),true))()
 end)
 
-XennyWareButton.Name = "YerPeqButton"
+XennyWareButton.Name = "XennyWareButton"
 XennyWareButton.Parent = MM2Frame
 XennyWareButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 XennyWareButton.Position = UDim2.new(0, 54, 0, 37)
 XennyWareButton.Size = UDim2.new(0, 200, 0, 50)
 XennyWareButton.Font = Enum.Font.SourceSans
-XennyWareButton.Text = "YerPeq"
+XennyWareButton.Text = "XennyWare"
 XennyWareButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 XennyWareButton.TextScaled = true
 XennyWareButton.TextSize = 14.000
 XennyWareButton.TextWrapped = true
 XennyWareButton.MouseButton1Down:connect(function()
-	Scripthere
+	repeat wait() until game.Players.LocalPlayer.Character
+	url = "https://raw.githubusercontent.com/xennyy/Xenny-Ware/main/loader.lua"
+	loadstring(game:HttpGet(url))()
 end)
 
 Frame.Parent = MainFrame
