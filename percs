@@ -105,6 +105,8 @@ MainFrame.BorderSizePixel = 0
 MainFrame.Position = UDim2.new(0.459555656, 0, 0.280856401, 0)
 MainFrame.Size = UDim2.new(0, 410, 0, 354)
 MainFrame.Visible = false
+MainFrame.Active = true
+MainFrame.Draggable = true
 
 UICorner.Parent = MainFrame
 
@@ -276,7 +278,7 @@ UIAspectRatioConstraint.AspectRatio = 1.158
 
 -- Scripts:
 
-local function ECXV_fake_script() -- DaHood.LocalScript 
+local function MMIQYD_fake_script() -- DaHood.LocalScript 
 	local script = Instance.new('LocalScript', DaHood)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -286,8 +288,8 @@ local function ECXV_fake_script() -- DaHood.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(ECXV_fake_script)()
-local function LJEGUX_fake_script() -- MM2.LocalScript 
+coroutine.wrap(MMIQYD_fake_script)()
+local function FNLA_fake_script() -- MM2.LocalScript 
 	local script = Instance.new('LocalScript', MM2)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -297,8 +299,8 @@ local function LJEGUX_fake_script() -- MM2.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(LJEGUX_fake_script)()
-local function DIXFJBL_fake_script() -- Main.LocalScript 
+coroutine.wrap(FNLA_fake_script)()
+local function KMHVL_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -308,4 +310,26 @@ local function DIXFJBL_fake_script() -- Main.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(DIXFJBL_fake_script)()
+coroutine.wrap(KMHVL_fake_script)()
+local function YVFE_fake_script() -- MainFrame.LocalScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "h" then
+			script.Parent.Visible = true
+		end
+	end)
+	
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "h" then
+			script.Parent.Visible = false
+		end
+	end)
+	
+	
+end
+coroutine.wrap(YVFE_fake_script)()
