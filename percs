@@ -23,6 +23,7 @@ local HomeFrame = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
 local DiscordLabel = Instance.new("TextLabel")
 local WelcomeLabel = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 
 
 
@@ -32,59 +33,62 @@ ScriptHub.Parent = game.CoreGui
 LoginFrame.Name = "LoginFrame"
 LoginFrame.Parent = ScriptHub
 LoginFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-LoginFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+LoginFrame.BorderColor3 = Color3.fromRGB(255, 0, 4)
 LoginFrame.BorderSizePixel = 5
-LoginFrame.Position = UDim2.new(0.0721114427, 0, 0.407899022, 0)
+LoginFrame.Position = UDim2.new(0.0325022489, 0, 0.360617697, 0)
 LoginFrame.Size = UDim2.new(0, 317, 0, 349)
 LoginFrame.Active = true
 LoginFrame.Draggable = true
 
 Logintitle.Name = "Login title"
 Logintitle.Parent = LoginFrame
-Logintitle.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Logintitle.BorderColor3 = Color3.fromRGB(109, 109, 109)
+Logintitle.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Logintitle.BorderColor3 = Color3.fromRGB(255, 0, 4)
 Logintitle.BorderSizePixel = 5
 Logintitle.Size = UDim2.new(0, 317, 0, 50)
-Logintitle.Font = Enum.Font.SourceSans
+Logintitle.Font = Enum.Font.SciFi
 Logintitle.Text = "Login"
-Logintitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Logintitle.TextColor3 = Color3.fromRGB(0, 0, 0)
 Logintitle.TextScaled = true
 Logintitle.TextSize = 14.000
 Logintitle.TextWrapped = true
 
 username.Name = "username"
 username.Parent = LoginFrame
-username.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+username.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+username.BorderColor3 = Color3.fromRGB(255, 0, 4)
+username.BorderSizePixel = 5
 username.Position = UDim2.new(0.164037853, 0, 0.303724915, 0)
 username.Size = UDim2.new(0, 227, 0, 50)
-username.Font = Enum.Font.SourceSans
+username.Font = Enum.Font.SciFi
 username.Text = "Username"
-username.TextColor3 = Color3.fromRGB(255, 255, 255)
-username.TextScaled = true
-username.TextSize = 14.000
+username.TextColor3 = Color3.fromRGB(0, 0, 0)
+username.TextSize = 35.000
 username.TextWrapped = true
 
 password.Name = "password"
 password.Parent = LoginFrame
-password.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+password.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+password.BorderColor3 = Color3.fromRGB(255, 0, 4)
+password.BorderSizePixel = 5
 password.Position = UDim2.new(0.164037853, 0, 0.55587393, 0)
 password.Size = UDim2.new(0, 227, 0, 50)
-password.Font = Enum.Font.SourceSans
+password.Font = Enum.Font.SciFi
 password.Text = "Password"
-password.TextColor3 = Color3.fromRGB(255, 255, 255)
-password.TextScaled = true
-password.TextSize = 14.000
+password.TextColor3 = Color3.fromRGB(0, 0, 0)
+password.TextSize = 35.000
 password.TextWrapped = true
 
 TextButton.Parent = LoginFrame
-TextButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+TextButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+TextButton.BorderColor3 = Color3.fromRGB(255, 0, 4)
+TextButton.BorderSizePixel = 5
 TextButton.Position = UDim2.new(0, 65, 0, 287)
-TextButton.Size = UDim2.new(0, 200, 0, 50)
-TextButton.Font = Enum.Font.SourceSans
+TextButton.Size = UDim2.new(0, 200, 0, 51)
+TextButton.Font = Enum.Font.SciFi
 TextButton.Text = "Login"
-TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextScaled = true
-TextButton.TextSize = 14.000
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 35.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:connect(function()
 	if username.Text == "Percs" and password.Text == "Gui" then
@@ -96,22 +100,20 @@ end)
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = ScriptHub
 MainFrame.Active = true
-MainFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+MainFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.54713738, 0, 0.278492361, 0)
+MainFrame.Position = UDim2.new(0.459555656, 0, 0.280856401, 0)
 MainFrame.Size = UDim2.new(0, 410, 0, 354)
 MainFrame.Visible = false
-MainFrame.Active = true
-MainFrame.Draggable = true
 
 UICorner.Parent = MainFrame
 
 DaHood.Name = "DaHood"
 DaHood.Parent = MainFrame
 DaHood.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-DaHood.BorderColor3 = Color3.fromRGB(255, 255, 255)
+DaHood.BorderColor3 = Color3.fromRGB(255, 0, 4)
 DaHood.BorderSizePixel = 5
-DaHood.Position = UDim2.new(0, 277, 0, 9)
+DaHood.Position = UDim2.new(0, 274, 0, 9)
 DaHood.Size = UDim2.new(0, 115, 0, 50)
 DaHood.Font = Enum.Font.SciFi
 DaHood.Text = "DaHood"
@@ -122,7 +124,7 @@ DaHood.TextWrapped = true
 MM2.Name = "MM2"
 MM2.Parent = MainFrame
 MM2.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-MM2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+MM2.BorderColor3 = Color3.fromRGB(255, 0, 4)
 MM2.BorderSizePixel = 5
 MM2.Position = UDim2.new(0, 151, 0, 9)
 MM2.Size = UDim2.new(0, 115, 0, 50)
@@ -145,6 +147,8 @@ UICorner_2.Parent = DaHoodFrame
 LegacyButton.Name = "LegacyButton"
 LegacyButton.Parent = DaHoodFrame
 LegacyButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+LegacyButton.BorderColor3 = Color3.fromRGB(255, 0, 4)
+LegacyButton.BorderSizePixel = 5
 LegacyButton.Position = UDim2.new(0, 114, 0, 88)
 LegacyButton.Size = UDim2.new(0, 200, 0, 50)
 LegacyButton.Font = Enum.Font.SourceSans
@@ -154,12 +158,15 @@ LegacyButton.TextScaled = true
 LegacyButton.TextSize = 14.000
 LegacyButton.TextWrapped = true
 LegacyButton.MouseButton1Down:connect(function()
+	-- v to close
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CrystalManMan/crystacentral/main/wonder"))()
 end)
 
 RayXButton.Name = "RayXButton"
 RayXButton.Parent = DaHoodFrame
 RayXButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+RayXButton.BorderColor3 = Color3.fromRGB(255, 0, 4)
+RayXButton.BorderSizePixel = 5
 RayXButton.Position = UDim2.new(0, 114, 0, 157)
 RayXButton.Size = UDim2.new(0, 200, 0, 50)
 RayXButton.Font = Enum.Font.SourceSans
@@ -185,8 +192,8 @@ UICorner_3.Parent = MM2Frame
 EclipseButton.Name = "EclipseButton"
 EclipseButton.Parent = MM2Frame
 EclipseButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-EclipseButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-EclipseButton.BorderSizePixel = 3
+EclipseButton.BorderColor3 = Color3.fromRGB(255, 0, 4)
+EclipseButton.BorderSizePixel = 5
 EclipseButton.Position = UDim2.new(0, 110, 0, 157)
 EclipseButton.Size = UDim2.new(0, 200, 0, 50)
 EclipseButton.Font = Enum.Font.SourceSans
@@ -196,14 +203,14 @@ EclipseButton.TextScaled = true
 EclipseButton.TextSize = 14.000
 EclipseButton.TextWrapped = true
 EclipseButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script"),true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
 end)
 
 HoldHubButton.Name = "HoldHubButton"
 HoldHubButton.Parent = MM2Frame
 HoldHubButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-HoldHubButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
-HoldHubButton.BorderSizePixel = 3
+HoldHubButton.BorderColor3 = Color3.fromRGB(255, 0, 4)
+HoldHubButton.BorderSizePixel = 5
 HoldHubButton.Position = UDim2.new(0, 110, 0, 88)
 HoldHubButton.Size = UDim2.new(0, 200, 0, 50)
 HoldHubButton.Font = Enum.Font.SourceSans
@@ -213,15 +220,17 @@ HoldHubButton.TextScaled = true
 HoldHubButton.TextSize = 14.000
 HoldHubButton.TextWrapped = true
 HoldHubButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Holdigen/HoldHub/main/mm2", true))()
+	NAMEOFBUTTONHERE.MouseButton1Down:connect(function()
+		Scripthere
+	end)
 end)
 
 Main.Name = "Main"
 Main.Parent = MainFrame
 Main.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-Main.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Main.BorderColor3 = Color3.fromRGB(255, 0, 4)
 Main.BorderSizePixel = 5
-Main.Position = UDim2.new(0, 24, 0, 9)
+Main.Position = UDim2.new(0, 26, 0, 9)
 Main.Size = UDim2.new(0, 115, 0, 50)
 Main.Font = Enum.Font.SciFi
 Main.Text = "Home"
@@ -241,7 +250,7 @@ UICorner_4.Parent = HomeFrame
 DiscordLabel.Name = "DiscordLabel"
 DiscordLabel.Parent = HomeFrame
 DiscordLabel.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-DiscordLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+DiscordLabel.BorderColor3 = Color3.fromRGB(255, 0, 4)
 DiscordLabel.BorderSizePixel = 5
 DiscordLabel.Position = UDim2.new(0.151219547, 0, 0.746323526, 0)
 DiscordLabel.Size = UDim2.new(0, 286, 0, 50)
@@ -253,7 +262,7 @@ DiscordLabel.TextSize = 25.000
 WelcomeLabel.Name = "WelcomeLabel"
 WelcomeLabel.Parent = HomeFrame
 WelcomeLabel.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-WelcomeLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+WelcomeLabel.BorderColor3 = Color3.fromRGB(255, 0, 4)
 WelcomeLabel.BorderSizePixel = 5
 WelcomeLabel.Position = UDim2.new(0.158536613, 0, 0.367647052, 0)
 WelcomeLabel.Size = UDim2.new(0, 286, 0, 50)
@@ -262,9 +271,12 @@ WelcomeLabel.Text = "Welcome, To Percs Script Hub"
 WelcomeLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 WelcomeLabel.TextSize = 25.000
 
+UIAspectRatioConstraint.Parent = MainFrame
+UIAspectRatioConstraint.AspectRatio = 1.158
+
 -- Scripts:
 
-local function HWLNCVI_fake_script() -- DaHood.LocalScript 
+local function ECXV_fake_script() -- DaHood.LocalScript 
 	local script = Instance.new('LocalScript', DaHood)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -274,8 +286,8 @@ local function HWLNCVI_fake_script() -- DaHood.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(HWLNCVI_fake_script)()
-local function CNQDYMT_fake_script() -- MM2.LocalScript 
+coroutine.wrap(ECXV_fake_script)()
+local function LJEGUX_fake_script() -- MM2.LocalScript 
 	local script = Instance.new('LocalScript', MM2)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -285,8 +297,8 @@ local function CNQDYMT_fake_script() -- MM2.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(CNQDYMT_fake_script)()
-local function NYLVRIZ_fake_script() -- Main.LocalScript 
+coroutine.wrap(LJEGUX_fake_script)()
+local function DIXFJBL_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -296,4 +308,4 @@ local function NYLVRIZ_fake_script() -- Main.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(NYLVRIZ_fake_script)()
+coroutine.wrap(DIXFJBL_fake_script)()
