@@ -222,8 +222,8 @@ HoldHubButton.TextScaled = true
 HoldHubButton.TextSize = 14.000
 HoldHubButton.TextWrapped = true
 HoldHubButton.MouseButton1Down:connect(function()
-	NAMEOFBUTTONHERE.MouseButton1Down:connect(function()
-		Scripthere
+HoldHubButton.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Holdigen/HoldHub/main/mm2", true))()
 	end)
 end)
 
