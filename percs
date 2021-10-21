@@ -93,7 +93,7 @@ TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextScaled = true
 TextButton.TextSize = 14.000
 TextButton.TextWrapped = true
-LoginFrame.MouseButton1Down:connect(function()
+TextButton.MouseButton1Down:connect(function()
 	if username.Text == "Percs" and password.Text == "Gui" then
 		LoginFrame.Visible = false
 		MainFrame.Visible = true
