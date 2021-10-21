@@ -23,7 +23,6 @@ local HomeFrame = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
 local DiscordLabel = Instance.new("TextLabel")
 local WelcomeLabel = Instance.new("TextLabel")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 
 
 
@@ -105,8 +104,6 @@ MainFrame.BorderSizePixel = 0
 MainFrame.Position = UDim2.new(0.459555656, 0, 0.280856401, 0)
 MainFrame.Size = UDim2.new(0, 410, 0, 354)
 MainFrame.Visible = false
-MainFrame.Active = true
-MainFrame.Draggable = true
 
 UICorner.Parent = MainFrame
 
@@ -222,9 +219,7 @@ HoldHubButton.TextScaled = true
 HoldHubButton.TextSize = 14.000
 HoldHubButton.TextWrapped = true
 HoldHubButton.MouseButton1Down:connect(function()
-HoldHubButton.MouseButton1Down:connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Holdigen/HoldHub/main/mm2", true))()
-	end)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Holdigen/HoldHub/main/mm2", true))()
 end)
 
 Main.Name = "Main"
@@ -273,12 +268,9 @@ WelcomeLabel.Text = "Welcome, To Percs Script Hub"
 WelcomeLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 WelcomeLabel.TextSize = 25.000
 
-UIAspectRatioConstraint.Parent = MainFrame
-UIAspectRatioConstraint.AspectRatio = 1.158
-
 -- Scripts:
 
-local function MMIQYD_fake_script() -- DaHood.LocalScript 
+local function DJKKQ_fake_script() -- DaHood.LocalScript 
 	local script = Instance.new('LocalScript', DaHood)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -288,8 +280,8 @@ local function MMIQYD_fake_script() -- DaHood.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(MMIQYD_fake_script)()
-local function FNLA_fake_script() -- MM2.LocalScript 
+coroutine.wrap(DJKKQ_fake_script)()
+local function TYCV_fake_script() -- MM2.LocalScript 
 	local script = Instance.new('LocalScript', MM2)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -299,8 +291,8 @@ local function FNLA_fake_script() -- MM2.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(FNLA_fake_script)()
-local function KMHVL_fake_script() -- Main.LocalScript 
+coroutine.wrap(TYCV_fake_script)()
+local function IGWZJ_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -310,8 +302,4 @@ local function KMHVL_fake_script() -- Main.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(KMHVL_fake_script)()
-local function YVFE_fake_script() -- MainFrame.LocalScript 
-	local script = Instance.new('LocalScript', MainFrame)
-
-coroutine.wrap(YVFE_fake_script)()
+coroutine.wrap(IGWZJ_fake_script)()
