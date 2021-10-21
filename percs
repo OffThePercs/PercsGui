@@ -298,20 +298,6 @@ AdminFrame.Visible = false
 
 UICorner_5.Parent = AdminFrame
 
-LegacyButton_2.Name = "LegacyButton"
-LegacyButton_2.Parent = AdminFrame
-LegacyButton_2.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
-LegacyButton_2.BorderColor3 = Color3.fromRGB(255, 0, 4)
-LegacyButton_2.BorderSizePixel = 5
-LegacyButton_2.Position = UDim2.new(0, 26, 0, 129)
-LegacyButton_2.Size = UDim2.new(0, 195, 0, 50)
-LegacyButton_2.Font = Enum.Font.SourceSans
-LegacyButton_2.Text = "Legacy"
-LegacyButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-LegacyButton_2.TextScaled = true
-LegacyButton_2.TextSize = 14.000
-LegacyButton_2.TextWrapped = true
-
 infiniteyieldButton.Name = "infinite yieldButton"
 infiniteyieldButton.Parent = AdminFrame
 infiniteyieldButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
@@ -325,6 +311,9 @@ infiniteyieldButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 infiniteyieldButton.TextScaled = true
 infiniteyieldButton.TextSize = 14.000
 infiniteyieldButton.TextWrapped = true
+infiniteyieldButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
 
 Comingsoontitle.Name = "Coming soon  title"
 Comingsoontitle.Parent = AdminFrame
