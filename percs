@@ -23,6 +23,12 @@ local HomeFrame = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
 local DiscordLabel = Instance.new("TextLabel")
 local WelcomeLabel = Instance.new("TextLabel")
+local Admin = Instance.new("TextButton")
+local AdminFrame = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local LegacyButton_2 = Instance.new("TextButton")
+local infiniteyieldButton = Instance.new("TextButton")
+local Comingsoontitle = Instance.new("TextLabel")
 
 
 
@@ -101,9 +107,8 @@ MainFrame.Parent = ScriptHub
 MainFrame.Active = true
 MainFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 MainFrame.BorderSizePixel = 0
-MainFrame.Position = UDim2.new(0.505820513, 0, 0.290078014, 0)
-MainFrame.Size = UDim2.new(0, 410, 0, 354)
-MainFrame.Visible = false
+MainFrame.Position = UDim2.new(0.497314394, 0, 0.375458151, 0)
+MainFrame.Size = UDim2.new(0, 535, 0, 354)
 MainFrame.Active = true
 MainFrame.Draggable = true
 
@@ -140,7 +145,7 @@ DaHoodFrame.Parent = MainFrame
 DaHoodFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 DaHoodFrame.BackgroundTransparency = 1.000
 DaHoodFrame.Position = UDim2.new(0, 0, 0, 81)
-DaHoodFrame.Size = UDim2.new(0, 410, 0, 272)
+DaHoodFrame.Size = UDim2.new(0, 535, 0, 273)
 DaHoodFrame.Visible = false
 
 UICorner_2.Parent = DaHoodFrame
@@ -150,8 +155,8 @@ LegacyButton.Parent = DaHoodFrame
 LegacyButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 LegacyButton.BorderColor3 = Color3.fromRGB(255, 0, 4)
 LegacyButton.BorderSizePixel = 5
-LegacyButton.Position = UDim2.new(0, 114, 0, 88)
-LegacyButton.Size = UDim2.new(0, 200, 0, 50)
+LegacyButton.Position = UDim2.new(0, 26, 0, 129)
+LegacyButton.Size = UDim2.new(0, 195, 0, 50)
 LegacyButton.Font = Enum.Font.SourceSans
 LegacyButton.Text = "Legacy"
 LegacyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -168,8 +173,8 @@ RayXButton.Parent = DaHoodFrame
 RayXButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 RayXButton.BorderColor3 = Color3.fromRGB(255, 0, 4)
 RayXButton.BorderSizePixel = 5
-RayXButton.Position = UDim2.new(0, 114, 0, 157)
-RayXButton.Size = UDim2.new(0, 200, 0, 50)
+RayXButton.Position = UDim2.new(0, 26, 0, 12)
+RayXButton.Size = UDim2.new(0, 195, 0, 52)
 RayXButton.Font = Enum.Font.SourceSans
 RayXButton.Text = "RayX"
 RayXButton.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -185,7 +190,7 @@ MM2Frame.Parent = MainFrame
 MM2Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 MM2Frame.BackgroundTransparency = 1.000
 MM2Frame.Position = UDim2.new(0, 0, 0, 81)
-MM2Frame.Size = UDim2.new(0, 410, 0, 272)
+MM2Frame.Size = UDim2.new(0, 535, 0, 273)
 MM2Frame.Visible = false
 
 UICorner_3.Parent = MM2Frame
@@ -195,8 +200,8 @@ EclipseButton.Parent = MM2Frame
 EclipseButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 EclipseButton.BorderColor3 = Color3.fromRGB(255, 0, 4)
 EclipseButton.BorderSizePixel = 5
-EclipseButton.Position = UDim2.new(0, 110, 0, 157)
-EclipseButton.Size = UDim2.new(0, 200, 0, 50)
+EclipseButton.Position = UDim2.new(0, 26, 0, 188)
+EclipseButton.Size = UDim2.new(0, 195, 0, 50)
 EclipseButton.Font = Enum.Font.SourceSans
 EclipseButton.Text = "Eclipse"
 EclipseButton.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -212,8 +217,8 @@ HoldHubButton.Parent = MM2Frame
 HoldHubButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 HoldHubButton.BorderColor3 = Color3.fromRGB(255, 0, 4)
 HoldHubButton.BorderSizePixel = 5
-HoldHubButton.Position = UDim2.new(0, 110, 0, 88)
-HoldHubButton.Size = UDim2.new(0, 200, 0, 50)
+HoldHubButton.Position = UDim2.new(0, 26, 0, 72)
+HoldHubButton.Size = UDim2.new(0, 195, 0, 50)
 HoldHubButton.Font = Enum.Font.SourceSans
 HoldHubButton.Text = "HoldHub"
 HoldHubButton.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -242,7 +247,7 @@ HomeFrame.Parent = MainFrame
 HomeFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 HomeFrame.BackgroundTransparency = 1.000
 HomeFrame.Position = UDim2.new(0, 0, 0, 81)
-HomeFrame.Size = UDim2.new(0, 410, 0, 272)
+HomeFrame.Size = UDim2.new(0, 535, 0, 273)
 
 UICorner_4.Parent = HomeFrame
 
@@ -251,8 +256,8 @@ DiscordLabel.Parent = HomeFrame
 DiscordLabel.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 DiscordLabel.BorderColor3 = Color3.fromRGB(255, 0, 4)
 DiscordLabel.BorderSizePixel = 5
-DiscordLabel.Position = UDim2.new(0.151219547, 0, 0.746323526, 0)
-DiscordLabel.Size = UDim2.new(0, 286, 0, 50)
+DiscordLabel.Position = UDim2.new(0.218999997, 0, 0.115000002, 0)
+DiscordLabel.Size = UDim2.new(0, 304, 0, 61)
 DiscordLabel.Font = Enum.Font.SourceSans
 DiscordLabel.Text = "https://discord.gg/48gPAvHXhH"
 DiscordLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -263,49 +268,117 @@ WelcomeLabel.Parent = HomeFrame
 WelcomeLabel.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
 WelcomeLabel.BorderColor3 = Color3.fromRGB(255, 0, 4)
 WelcomeLabel.BorderSizePixel = 5
-WelcomeLabel.Position = UDim2.new(0.158536613, 0, 0.367647052, 0)
-WelcomeLabel.Size = UDim2.new(0, 286, 0, 50)
+WelcomeLabel.Position = UDim2.new(0.218829393, 0, 0.602079391, 0)
+WelcomeLabel.Size = UDim2.new(0, 304, 0, 61)
 WelcomeLabel.Font = Enum.Font.SourceSans
 WelcomeLabel.Text = "Welcome, To Percs Script Hub"
 WelcomeLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 WelcomeLabel.TextSize = 25.000
 
+Admin.Name = "Admin"
+Admin.Parent = MainFrame
+Admin.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Admin.BorderColor3 = Color3.fromRGB(255, 0, 4)
+Admin.BorderSizePixel = 5
+Admin.Position = UDim2.new(0, 396, 0, 9)
+Admin.Size = UDim2.new(0, 115, 0, 50)
+Admin.Font = Enum.Font.SciFi
+Admin.Text = "Admin"
+Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Admin.TextSize = 35.000
+Admin.TextWrapped = true
+
+AdminFrame.Name = "AdminFrame"
+AdminFrame.Parent = MainFrame
+AdminFrame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+AdminFrame.BackgroundTransparency = 1.000
+AdminFrame.Position = UDim2.new(0, 0, 0, 81)
+AdminFrame.Size = UDim2.new(0, 535, 0, 273)
+AdminFrame.Visible = false
+
+UICorner_5.Parent = AdminFrame
+
+LegacyButton_2.Name = "LegacyButton"
+LegacyButton_2.Parent = AdminFrame
+LegacyButton_2.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+LegacyButton_2.BorderColor3 = Color3.fromRGB(255, 0, 4)
+LegacyButton_2.BorderSizePixel = 5
+LegacyButton_2.Position = UDim2.new(0, 26, 0, 129)
+LegacyButton_2.Size = UDim2.new(0, 195, 0, 50)
+LegacyButton_2.Font = Enum.Font.SourceSans
+LegacyButton_2.Text = "Legacy"
+LegacyButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+LegacyButton_2.TextScaled = true
+LegacyButton_2.TextSize = 14.000
+LegacyButton_2.TextWrapped = true
+
+infiniteyieldButton.Name = "infinite yieldButton"
+infiniteyieldButton.Parent = AdminFrame
+infiniteyieldButton.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+infiniteyieldButton.BorderColor3 = Color3.fromRGB(255, 0, 4)
+infiniteyieldButton.BorderSizePixel = 5
+infiniteyieldButton.Position = UDim2.new(0, 316, 0, 10)
+infiniteyieldButton.Size = UDim2.new(0, 195, 0, 52)
+infiniteyieldButton.Font = Enum.Font.SourceSans
+infiniteyieldButton.Text = "infinite yield"
+infiniteyieldButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+infiniteyieldButton.TextScaled = true
+infiniteyieldButton.TextSize = 14.000
+infiniteyieldButton.TextWrapped = true
+
+Comingsoontitle.Name = "Coming soon  title"
+Comingsoontitle.Parent = AdminFrame
+Comingsoontitle.BackgroundColor3 = Color3.fromRGB(55, 55, 55)
+Comingsoontitle.BorderColor3 = Color3.fromRGB(255, 0, 4)
+Comingsoontitle.BorderSizePixel = 5
+Comingsoontitle.Position = UDim2.new(0.590654194, 0, 0.263736308, 0)
+Comingsoontitle.Size = UDim2.new(0, 195, 0, 50)
+Comingsoontitle.Font = Enum.Font.SciFi
+Comingsoontitle.Text = "Coming soon"
+Comingsoontitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+Comingsoontitle.TextScaled = true
+Comingsoontitle.TextSize = 14.000
+Comingsoontitle.TextWrapped = true
+
 -- Scripts:
 
-local function OVRDE_fake_script() -- DaHood.LocalScript 
+local function VIPPF_fake_script() -- DaHood.LocalScript 
 	local script = Instance.new('LocalScript', DaHood)
 
 	script.Parent.MouseButton1Click:connect(function()
 		script.Parent.Parent.DaHoodFrame.Visible = true
-		script.Parent.Parent.MM2Frame.Visible = false
+		script.Parent.Parent.MM2Frame.Visible = false	
 		script.Parent.Parent.HomeFrame.Visible = false
+		script.Parent.Parent.AdminFrame.Visible = false
 		wait(0.1)
 	end)
 end
-coroutine.wrap(OVRDE_fake_script)()
-local function HEABAQI_fake_script() -- MM2.LocalScript 
+coroutine.wrap(VIPPF_fake_script)()
+local function UCQOVR_fake_script() -- MM2.LocalScript 
 	local script = Instance.new('LocalScript', MM2)
 
 	script.Parent.MouseButton1Click:connect(function()
 		script.Parent.Parent.DaHoodFrame.Visible = false
 		script.Parent.Parent.MM2Frame.Visible = true	
 		script.Parent.Parent.HomeFrame.Visible = false
+		script.Parent.Parent.AdminFrame.Visible = false
 		wait(0.1)
 	end)
 end
-coroutine.wrap(HEABAQI_fake_script)()
-local function CIBCY_fake_script() -- Main.LocalScript 
+coroutine.wrap(UCQOVR_fake_script)()
+local function JQJCVZW_fake_script() -- Main.LocalScript 
 	local script = Instance.new('LocalScript', Main)
 
 	script.Parent.MouseButton1Click:connect(function()
 		script.Parent.Parent.DaHoodFrame.Visible = false
-		script.Parent.Parent.MM2Frame.Visible = false
+		script.Parent.Parent.MM2Frame.Visible = false	
 		script.Parent.Parent.HomeFrame.Visible = true
+		script.Parent.Parent.AdminFrame.Visible = false
 		wait(0.1)
 	end)
 end
-coroutine.wrap(CIBCY_fake_script)()
-local function YOIGJVA_fake_script() -- MainFrame.LocalScript 
+coroutine.wrap(JQJCVZW_fake_script)()
+local function RPWJXG_fake_script() -- MainFrame.LocalScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local FrameObject = script.Parent.FrameObject
@@ -329,4 +402,16 @@ local function YOIGJVA_fake_script() -- MainFrame.LocalScript
 	end)
 	
 end
-coroutine.wrap(YOIGJVA_fake_script)()
+coroutine.wrap(RPWJXG_fake_script)()
+local function OLDZRKJ_fake_script() -- Admin.LocalScript 
+	local script = Instance.new('LocalScript', Admin)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.DaHoodFrame.Visible = false
+		script.Parent.Parent.MM2Frame.Visible = false	
+		script.Parent.Parent.HomeFrame.Visible = false
+		script.Parent.Parent.AdminFrame.Visible = true
+		wait(0.1)
+	end)
+end
+coroutine.wrap(OLDZRKJ_fake_script)()
